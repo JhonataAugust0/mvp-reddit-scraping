@@ -1,5 +1,5 @@
 import pandas as pd
-from domain.ports.storage_port import StoragePort
+from ..domain.ports.storage_port import StoragePort
 
 
 class StorageAdapter(StoragePort):

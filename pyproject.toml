@@ -38,7 +38,7 @@ skip-string-normalization = true
 
 [tool.isort]
 profile = "black"
-line_length = 79
+line_length = 108
 
 [tool.taskipy.tasks]
 lint = "blue --check --diff . && isort --check --diff ."

@@ -18,7 +18,7 @@ def main():
     reddit_scraper = RedditScraper(reddit_adapter)
 
     # Busca os dados de posts
-    posts = reddit_scraper.get_top_posts(subreddit='skeptic', limit=10)
+    posts = reddit_scraper.get_top_posts(subreddit='skeptic', limit=1)
 
     storage = StorageAdapter()
     storage.save_to_csv(posts, 'reddit_skeptic_posts.csv')
