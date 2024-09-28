@@ -44,19 +44,19 @@ Este repositório foi configurado utilizando o gerenciador de pacotes e dependê
 1. Clone o repositório
 ```
 bash 
-git clone https://github.com/JhonataAugust0/mvc-scrapping.git
+git clone https://github.com/JhonataAugust0/mvp-reddit-scrapping.git
 ```
 
 2. Acesse o repositório
 ```
 bash 
-cd /mvc-scrapping/
+cd /mvp-reddit-scrapping/
 ```
 
 3. Configure suas credenciais da API do Reddit no arquivo .env.
 
 2. Execute o script principal:
 ```bash
-poetry run python mvc-scrapping/app/main.py
+poetry run python mvp-reddit-scrapping/app/main.py
 ```
 O script coletará os dados anonimizados e salvará em um arquivo reddit_skeptic_posts.csv e reddit_skeptic_posts.json.

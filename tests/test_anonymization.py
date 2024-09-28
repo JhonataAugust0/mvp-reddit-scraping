@@ -1,7 +1,7 @@
 import os
 
 import hashlib
-from mvc_scrapping.app.adapters.reddit_praw_adapter import RedditPrawAdapter
+from mvp_scrapping.app.adapters.reddit_praw_adapter import RedditPrawAdapter
 
 
 def test_anonymize_author():

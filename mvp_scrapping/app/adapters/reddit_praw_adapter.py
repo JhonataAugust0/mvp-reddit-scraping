@@ -1,5 +1,5 @@
 import praw
-from ..domain.ports.reddit_scraper_port import RedditScraperPort
+from mvp_scrapping.app.domain.ports.reddit_scraper_port import RedditScraperPort
 import hashlib
 import re
 

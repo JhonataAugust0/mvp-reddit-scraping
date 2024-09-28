@@ -1,6 +1,6 @@
 site_name: Prototype Reddit scrapper 
-repo_url: https://github.com/JhonataAugust0/mvc-scrapping
-repo_name: JhonataAugust0/mvc-scrapping
+repo_url: https://github.com/JhonataAugust0/mvp-reddit-scrapping
+repo_name: JhonataAugust0/mvp-reddit-scrapping
 edit_uri: tree/master/docs
 
 theme:

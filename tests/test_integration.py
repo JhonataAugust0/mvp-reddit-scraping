@@ -1,7 +1,7 @@
 import os
 
-from mvc_scrapping.app.adapters.reddit_praw_adapter import RedditPrawAdapter
-from mvc_scrapping.app.adapters.storage_adapter import StorageAdapter
+from mvp_scrapping.app.adapters.reddit_praw_adapter import RedditPrawAdapter
+from mvp_scrapping.app.adapters.storage_adapter import StorageAdapter
 from unittest.mock import MagicMock
 import pandas as pd
 

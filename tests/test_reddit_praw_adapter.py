@@ -2,7 +2,7 @@ import os
 
 import pytest
 from unittest.mock import MagicMock
-from mvc_scrapping.app.adapters.reddit_praw_adapter import RedditPrawAdapter
+from mvp_scrapping.app.adapters.reddit_praw_adapter import RedditPrawAdapter
 
 
 @pytest.fixture

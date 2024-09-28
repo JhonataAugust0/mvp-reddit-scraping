@@ -1,7 +1,7 @@
 import os
 
 import pandas as pd
-from mvc_scrapping.app.adapters.storage_adapter import StorageAdapter
+from mvp_scrapping.app.adapters.storage_adapter import StorageAdapter
 
 
 def test_save_to_csv(tmpdir):

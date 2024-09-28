@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mvc-scrapping"
+name = "mvp-reddit-scrapping"
 version = "0.1.0"
 description = ""
 authors = ["JhonataAugust0 <jhon.augustosilva@gmail.com>"]
@@ -30,7 +30,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini.options]
-pythonpath = "."
+pythonpath = "./mvp_scrapping"
 addopts = "--doctest-modules"
 
 [tool.blue]
@@ -44,5 +44,5 @@ line_length = 108
 lint = "blue --check --diff . && isort --check --diff ."
 docs = "mkdocs serve"
 pre_test = "task lint"
-test = "pytest -s -x --cov=mvc_scrapping -vv"
+test = "pytest -s -x --cov=mvp_scrapping -vv"
 post_test = "coverage html"
