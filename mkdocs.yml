@@ -1,0 +1,14 @@
+site_name: Prototype Reddit scrapper 
+repo_url: https://github.com/JhonataAugust0/mvc-scrapping
+repo_name: JhonataAugust0/mvc-scrapping
+edit_uri: tree/master/docs
+
+theme:
+  name: material
+  language: pt-BR
+
+markdown_extensions:
+  - attr_list
+
+extra_css: 
+  - stylesheets/extra.css
