@@ -25,3 +25,21 @@ mkdocstrings = "^0.26.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini.options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.blue]
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+docs = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=mvc_scrapping -vv"
+post_test = "coverage html"
