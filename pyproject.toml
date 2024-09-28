@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mvc-scrapping"
+version = "0.1.0"
+description = ""
+authors = ["JhonataAugust0 <jhon.augustosilva@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
+blue = "^0.9.1"
+isort = "^5.13.2"
+taskipy = "^1.13.0"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.5.38"
+mkdocstrings-python = "^1.11.1"
+mkdocstrings = "^0.26.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
