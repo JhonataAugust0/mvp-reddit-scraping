@@ -4,25 +4,25 @@ import hashlib
 import re
 
 class RedditPrawAdapter(RedditScraperPort):
-    def __init__(self, client_id, client_secret, user_agent):
+    def __init__(self, client_id: str, client_secret: str, user_agent: str) -> None:
         self.reddit = praw.Reddit(
             client_id=client_id,
             client_secret=client_secret,
             user_agent=user_agent,
         )
 
-    def anonymize_author(self, author_name):
+    def anonymize_author(self, author_name: str) -> str:
         """Substitui o nome do autor por um hash ou 'Anônimo'."""
         if author_name:
             return hashlib.sha256(author_name.encode()).hexdigest()
         return 'Anônimo'
 
-    def anonymize_text(self, text):
+    def anonymize_text(self, text: str) -> str:
         """Remove URLs e substitui informações identificáveis."""
         text = re.sub(r'http\S+', '[URL]', text)
         return text
     
-    def process_item(self, item, item_type='Post'):
+    def process_item(self, item, item_type='Post') -> dict:
         """Função recursiva para processar e anonimizar post e comentários."""
         anon_author = self.anonymize_author(item.author.name if item.author else None)
         anon_text = self.anonymize_text(item.selftext if item_type == 'Post' else item.body)
@@ -42,7 +42,7 @@ class RedditPrawAdapter(RedditScraperPort):
         return item_data
 
 
-    def fetch_top_posts(self, subreddit_name, limit=10):
+    def fetch_top_posts(self, subreddit_name: str, limit: int = 10) -> list:
         subreddit = self.reddit.subreddit(subreddit_name)
         data = []
 
